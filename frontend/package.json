@@ -1,0 +1,25 @@
+{
+  "name": "@match-prediction/frontend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "NEXT_DISABLE_WEBPACK_CACHE=1 NEXT_DIST_DIR=.next-dev next dev -p 6012",
+    "dev:clean": "rm -rf .next .next-dev .next-build && npm run dev",
+    "build": "NEXT_DIST_DIR=.next-build next build",
+    "start": "NEXT_DIST_DIR=.next-build next start -p ${PORT:-6012}",
+    "lint": "echo 'lint:frontend not configured yet'"
+  },
+  "dependencies": {
+    "date-fns": "^4.4.0",
+    "next": "14.2.5",
+    "react": "18.3.1",
+    "react-datepicker": "^9.1.0",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.4",
+    "@types/react": "^18.3.4",
+    "@types/react-dom": "^18.3.0",
+    "typescript": "^5.5.3"
+  }
+}
